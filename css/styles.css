@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background-color: rgb(77, 72, 72); */
+    background-image: url(../img/milkyway.jpg);
+    background-size: fill;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    position: relative;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nasa-img {
+    display: block;
+    width: 100%;
+    max-height: 80vh;
+    margin: 10px auto;
+    vertical-align: bottom;
+    border: solid 5px rgb(240, 237, 237);
+}
+
+.header {
+    /* background-color: rgb(49, 49, 47);
+    box-shadow: 0 4px 2px -2px rgb(17, 16, 16); */
+    font-weight: 600;
+    margin: 0 0 5px;
+    text-align: center;
+}
+
+.header, .title {
+    font-family: 'Cairo', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.date {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.button {
+    display: none; 
+}
+
+.text {
+    color: white;
+    width: 95%;
+}
+
+.overlay {
+    display: block;
+    background-color: rgba(0, 0, 0,.6);
+    justify-content: left;
+    padding: 10px;
+    top: 0;
+    margin: 15px 5px;
+}
+
+@media all and (min-width: 768px) {
+
+.container {
+    width: 80%;
+}
+
+.button {
+    display: block;
+    width: 200px;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(77, 36, 52);
+    border: none;
+    font-size: 1.05rem;
+    padding: 15px;
+    margin: auto;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.button:hover {
+    background-color: rgb(131, 59, 86); 
+    border: solid 1px white;
+}
+
+.button::-moz-focus-inner {
+    border: 0;
+  }
+  
+
+.overlay {
+    display: none;
+    background-color: rgba(0, 0, 0,.6);
+    position: absolute;
+}
+} /* end of media query */
+
+@media all and (min-width: 1300px) {
+
+.container {
+    width: 55%;
+ }
+} /* end of media query */
